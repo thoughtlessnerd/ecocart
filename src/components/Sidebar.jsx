@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 
 const options = [
   { label: "Home", icon: "home", href: "/" },
-  { label: "Settings", icon: "settings", href: "/settings" },
+  // { label: "Settings", icon: "settings", href: "/settings" },
   { label: "Billing", icon: "credit_card", href: "/billing" },
   { label: "Projects", icon: "folder", href: "/projects" },
-  { label: "Integrations", icon: "apps", href: "/integrations" },
+  // { label: "Integrations", icon: "apps", href: "/integrations" },
 ];
 
 const Sidebar = () => {
@@ -20,7 +20,7 @@ const Sidebar = () => {
     <nav style={styles.sidebar}>
       <div style={styles.logoContainer}>
         <img
-          src="./icons/logo.svg" // Replace with the actual logo URL
+          src="./images/logo.png" // Replace with the actual logo URL
           alt="Logo"
           style={styles.logo}
         />
@@ -79,7 +79,7 @@ const styles = {
   },
   navItem: {
     width: "100%",
-    padding: "16px 0",
+    padding: "16px",
     display: "flex",
     flexDirection: "column",
     alignItems: "center",

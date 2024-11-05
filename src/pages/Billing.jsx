@@ -1,36 +1,35 @@
 import React, { useState } from "react";
 
+const billingHistory = [
+  {
+    amount: (Math.random() * 30).toFixed(2),
+    invoice: "3cafa5a8-14a0-4404-af2a-cee300821a50",
+    period: "Oct 01, 24 - Oct 31, 24",
+    status: "Paid",
+  },
+  {
+    amount: (Math.random() * 30).toFixed(2),
+    invoice: "34030776-50c2-47ae-b396-1b5f58cd71e9",
+    period: "Sep 01, 24 - Sep 30, 24",
+    status: "Paid",
+  },
+  {
+    amount: (Math.random() * 30).toFixed(2),
+    invoice: "65c4633e-c740-482e-a6c4-54c0f6094000",
+    period: "Aug 01, 24 - Aug 31, 24",
+    status: "Paid",
+  },
+  {
+    amount: (Math.random() * 30).toFixed(2),
+    invoice: "8366df56-866b-41d6-a56e-6ed11ee99b10",
+    period: "Jul 01, 24 - Jul 31, 24",
+    status: "Paid",
+  },
+  // Add more records here for pagination testing
+];
 const Billing = () => {
-  const billingHistory = [
-    {
-      amount: "$0.00",
-      invoice: "3cafa5a8-14a0-4404-af2a-cee300821a50",
-      period: "Oct 01, 24 - Oct 31, 24",
-      status: "Paid",
-    },
-    {
-      amount: "$0.00",
-      invoice: "34030776-50c2-47ae-b396-1b5f58cd71e9",
-      period: "Sep 01, 24 - Sep 30, 24",
-      status: "Paid",
-    },
-    {
-      amount: "$0.00",
-      invoice: "65c4633e-c740-482e-a6c4-54c0f6094000",
-      period: "Aug 01, 24 - Aug 31, 24",
-      status: "Paid",
-    },
-    {
-      amount: "$0.00",
-      invoice: "8366df56-866b-41d6-a56e-6ed11ee99b10",
-      period: "Jul 01, 24 - Jul 31, 24",
-      status: "Paid",
-    },
-    // Add more records here for pagination testing
-  ];
-
   const [currentPage, setCurrentPage] = useState(1);
-  const [itemsPerPage] = useState(2); // Set items per page
+  const [itemsPerPage] = useState(4); // Set items per page
 
   // Calculate the total pages
   const totalPages = Math.ceil(billingHistory.length / itemsPerPage);
@@ -60,8 +59,14 @@ const Billing = () => {
       <p style={styles.nextInvoice}>Next invoice date: Nov 01, 2024</p>
 
       <div style={styles.summaryContainer}>
-        <SummaryCard title="Total Amount Due" amount="$0.00" />
-        <SummaryCard title="Offset Orders" amount="0" />
+        <SummaryCard
+          title="Total Amount Due"
+          amount={`$${(Math.random() * 20).toFixed(2)}`}
+        />
+        <SummaryCard
+          title="Offset Orders"
+          amount={(Math.random() * 100).toFixed(0)}
+        />
         <SummaryCard title="Merchant Fees" amount="$0.00" />
         <SummaryCard title="Customer Fees" amount="$0.00" />
       </div>
@@ -138,7 +143,7 @@ const Billing = () => {
             </div>
             <span style={styles.tag}>Primary</span>
           </div>
-          <button style={styles.editButton}>Edit</button>
+          {/* <button style={styles.editButton}>Edit</button> */}
         </div>
       </section>
     </div>

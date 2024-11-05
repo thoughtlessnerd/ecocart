@@ -8,29 +8,172 @@ const data = {
     location: "Global",
     tag: "REDD+",
     about:
-      "This curated portfolio contains a variety of forestry-based carbon offset projects...",
+      "The Global Forestry Projects portfolio contains a diverse array of forestry-based carbon offset initiatives worldwide, focusing on reforestation, conservation, and sustainable forest management. By supporting these projects, you're aiding in the preservation of critical ecosystems, restoring degraded lands, and helping communities transition to sustainable practices. The projects within this portfolio span various regions, tackling deforestation and promoting carbon sequestration through natural solutions.",
     impact: [
       {
-        icon: "https://via.placeholder.com/50",
         value: "150000000",
         description: "Millions of tons of carbon captured",
       },
       {
-        icon: "https://via.placeholder.com/50",
         value: "1000000",
-        description: "Hectares of forest are protected",
+        description: "Hectares of forest protected",
       },
     ],
     benefits: [
-      "Reduces the amount of carbon in the atmosphere...",
-      "Provides safe and protected habitat to wildlife...",
-      "Protects the local water supplies...",
-      "Supports projects that provide jobs and education...",
+      "Reduces atmospheric carbon levels by preserving large forests.",
+      "Provides safe habitat for wildlife around the world.",
+      "Enhances water quality through natural filtration by forest ecosystems.",
+      "Creates jobs and supports local communities.",
     ],
     verification: {
       description:
-        "Founded in 2005, Verra is a global leader helping tackle...",
-      logo: "https://via.placeholder.com/100x40",
+        "Founded in 2005, Verra’s Verified Carbon Standard (VCS) program is the world’s most widely used voluntary greenhouse gas program. The VCS sets the standard for high-quality carbon offset projects, ensuring measurable, reportable, and verifiable emission reductions. Projects like Global Forestry Projects undergo rigorous third-party audits, ensuring that each ton of carbon offset meets strict environmental and social criteria. By choosing VCS-certified projects, you are assured of impactful and credible contributions to global climate goals.",
+      logo: "../images/VCS.png",
+    },
+  },
+  2: {
+    image: "../images/keo.png",
+    title: "Keo Seima Wildlife Sanctuary",
+    location: "Eastern Cambodia",
+    tag: "REDD+",
+    about:
+      "Located in the heart of Cambodia, the Keo Seima Wildlife Sanctuary focuses on protecting rich biodiversity and significant carbon stocks. This sanctuary is home to endangered species, including elephants and gibbons, while also providing critical resources to local indigenous communities. The project prioritizes ecosystem preservation by preventing illegal logging, promoting sustainable land use, and supporting local livelihoods through eco-friendly practices.",
+    impact: [
+      {
+        value: "50000000",
+        description: "Millions of tons of carbon captured",
+      },
+      {
+        value: "292000",
+        description: "Hectares of forest protected",
+      },
+    ],
+    benefits: [
+      "Protects endangered species in Cambodia.",
+      "Preserves the biodiversity of tropical forests.",
+      "Supports local communities through sustainable practices.",
+      "Enhances climate resilience by protecting large forest areas.",
+    ],
+    verification: {
+      description:
+        "Verra’s VCS standard ensures that projects like Keo Seima Wildlife Sanctuary not only reduce carbon emissions but also contribute to sustainable development and biodiversity conservation. Each project undergoes stringent verification by independent auditors, confirming its social and environmental benefits. With VCS certification, you can trust that the Keo Seima project has real, measurable impacts that align with global conservation priorities.",
+      logo: "../images/VCS.png",
+    },
+  },
+  3: {
+    image: "../images/mai.png",
+    title: "Mai Ndombe",
+    location: "Western Democratic Republic of the Congo",
+    tag: "REDD+",
+    about:
+      "Situated in the Congo Basin, the Mai Ndombe project aims to conserve one of the world's largest tropical rainforests. This project combats deforestation, safeguards wildlife, and improves the livelihoods of surrounding communities. As the 'lungs of Africa,' this rainforest plays a vital role in absorbing CO2 and regulating global weather patterns, making its protection essential for the climate.",
+    impact: [
+      {
+        value: "25000000",
+        description: "Millions of tons of carbon captured",
+      },
+      {
+        value: "300000",
+        description: "Hectares of forest protected",
+      },
+    ],
+    benefits: [
+      "Prevents deforestation in the Congo Basin.",
+      "Supports wildlife and biodiversity.",
+      "Provides sustainable employment for local communities.",
+      "Mitigates global warming by conserving vast forest areas.",
+    ],
+    verification: {
+      description:
+        "The Mai Ndombe project is certified by Verra’s VCS, which rigorously verifies its carbon reduction claims and environmental impact. Through regular auditing, VCS certification ensures transparency, accountability, and adherence to best practices in carbon sequestration and ecosystem protection. Your support of VCS-certified projects like Mai Ndombe drives effective climate action with verifiable results.",
+      logo: "../images/VCS.png",
+    },
+  },
+  4: {
+    image: "../images/forest.png",
+    title: "Envira Amazonia Project",
+    location: "State of Acre, Brazil",
+    tag: "REDD+",
+    about:
+      "The Envira Amazonia Project protects over 39,000 hectares of Amazon rainforest, helping to reduce deforestation and conserve biodiversity. Situated in the State of Acre, Brazil, this project collaborates with indigenous communities to protect traditional lands and conserve one of the most diverse ecosystems on the planet. In addition to preventing deforestation, it promotes sustainable land management and improves the livelihoods of local families.",
+    impact: [
+      {
+        value: "120000000",
+        description: "Millions of tons of carbon captured",
+      },
+      {
+        value: "500000",
+        description: "Hectares of forest protected",
+      },
+    ],
+    benefits: [
+      "Reduces deforestation in the Amazon rainforest.",
+      "Helps in protecting indigenous communities' rights.",
+      "Promotes biodiversity in one of the world's richest ecosystems.",
+      "Provides carbon offset for sustainable development.",
+    ],
+    verification: {
+      description:
+        "Envira Amazonia’s VCS certification guarantees that the project delivers real, measurable climate benefits. Through strict standards and independent audits, VCS ensures the project’s ongoing impact and its adherence to sustainability and social responsibility guidelines. Supporting Envira Amazonia means contributing to a trusted, impactful carbon offset project certified by Verra.",
+      logo: "../images/VCS.png",
+    },
+  },
+  5: {
+    image: "../images/katingan.png",
+    title: "Katingan Peatland Restoration and Conservation Project",
+    location: "Central Kalimantan, Indonesia",
+    tag: "REDD+",
+    about:
+      "Katingan Peatland is an ambitious restoration project aimed at protecting Indonesia’s valuable peatland ecosystems. Peatlands store massive amounts of carbon and play a critical role in regulating water cycles and reducing fire risks. This project focuses on peatland restoration, conservation, and community engagement, with the goal of achieving long-term climate benefits and biodiversity conservation.",
+    impact: [
+      {
+        value: "80000000",
+        description: "Millions of tons of carbon captured",
+      },
+      {
+        value: "149000",
+        description: "Hectares of peatland protected",
+      },
+    ],
+    benefits: [
+      "Preserves peatlands, a critical natural carbon sink.",
+      "Reduces risk of forest fires and protects air quality.",
+      "Supports the biodiversity of peatland ecosystems.",
+      "Enhances climate resilience for surrounding communities.",
+    ],
+    verification: {
+      description:
+        "The VCS certification for Katingan Peatland Restoration ensures that all aspects of the project are verified for environmental integrity and sustainability. VCS auditors monitor carbon storage, ecosystem health, and social impacts, ensuring that each contribution effectively mitigates climate change while supporting local communities.",
+      logo: "../images/VCS.png",
+    },
+  },
+  6: {
+    image: "../images/rimba.png",
+    title: "Rimba Raya Biodiversity Reserve",
+    location: "Central Kalimantan, Indonesia",
+    tag: "REDD+",
+    about:
+      "Rimba Raya is a biodiversity reserve committed to preserving tropical rainforest ecosystems and endangered species like orangutans. This project protects large swaths of land from deforestation, prevents peatland degradation, and offers sustainable livelihood options to local communities. By focusing on biodiversity and carbon storage, Rimba Raya plays a critical role in Indonesia's environmental sustainability.",
+    impact: [
+      {
+        value: "90000000",
+        description: "Millions of tons of carbon captured",
+      },
+      {
+        value: "65000",
+        description: "Hectares of forest protected",
+      },
+    ],
+    benefits: [
+      "Protects habitat for endangered species, including orangutans.",
+      "Enhances biodiversity through forest conservation.",
+      "Supports sustainable livelihoods for local communities.",
+      "Reduces greenhouse gas emissions by preventing deforestation.",
+    ],
+    verification: {
+      description:
+        "Rimba Raya’s VCS certification underscores the project’s commitment to high standards in carbon sequestration, biodiversity protection, and community development. VCS’s rigorous auditing process ensures that contributions to Rimba Raya achieve verified climate impact, protecting vital ecosystems while supporting local economic growth.",
+      logo: "../images/VCS.png",
     },
   },
 };
@@ -63,7 +206,6 @@ const Project = () => {
           <h3 style={styles.projectTitle}>{projectData.title}</h3>
           <p style={styles.location}>{projectData.location}</p>
           <span style={styles.tag}>{projectData.tag}</span>
-          <button style={styles.activeProjectButton}>Active Project</button>
         </div>
       </div>
 
@@ -77,7 +219,7 @@ const Project = () => {
         <div style={styles.impactMetrics}>
           {projectData.impact.map((metric, index) => (
             <div key={index} style={styles.impactMetric}>
-              <img src={metric.icon} alt="" style={styles.impactIcon} />
+              <img src="../icons/earth.svg" alt="" style={styles.impactIcon} />
               <p style={styles.impactValue}>{metric.value}</p>
               <p style={styles.impactDescription}>{metric.description}</p>
             </div>
@@ -206,11 +348,14 @@ const styles = {
     justifyContent: "space-around",
   },
   impactMetric: {
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
     textAlign: "center",
   },
   impactIcon: {
-    width: "50px",
-    height: "50px",
+    width: "150px",
+    height: "150px",
     marginBottom: "10px",
   },
   impactValue: {

@@ -10,33 +10,59 @@ import {
 
 const Home = () => {
   const data = [
-    { name: "Jan 2024", value: 0 },
-    { name: "Feb 2024", value: 0 },
-    { name: "Mar 2024", value: 0 },
-    { name: "Jun 2024", value: 0 },
+    { name: "Jan 2024", value: Math.floor(Math.random() * 100) },
+    { name: "Feb 2024", value: Math.floor(Math.random() * 100) },
+    { name: "Mar 2024", value: Math.floor(Math.random() * 100) },
+    { name: "Jun 2024", value: Math.floor(Math.random() * 100) },
     // Continue to add data points as needed
   ];
+  const offset = (Math.random() * 100).toFixed(2);
+  const orders = Math.floor(Math.random() * 100);
 
   return (
     <div style={styles.container}>
       <header style={styles.header}>
         <h1 style={styles.header?.h1}>Welcome back, Akshit Kumar!</h1>
         <h2 style={styles.header?.h2}>
-          To date, Ariadné has offset <span style={styles.highlight}>0 lb</span>{" "}
-          of carbon dioxide (CO₂) across{" "}
-          <span style={styles.highlight}>0 orders</span>
+          To date, Ariadné has offset{" "}
+          <span style={styles.highlight}>{offset} lb</span> of carbon dioxide
+          (CO₂) across <span style={styles.highlight}>{orders} orders</span>
         </h2>
 
         <section style={styles.offsetSection}>
           <h3>Which is similar to offsetting:</h3>
           <div style={styles.cardsContainer}>
             {[
-              { icon: "directions_car", label: "Miles Driven" },
-              { icon: "battery_charging_full", label: "Electricity Use" },
-              { icon: "smartphone", label: "Smartphones Charged" },
-              { icon: "eco", label: "Tree Seedlings" },
-              { icon: "landscape", label: "Acres of Forest" },
-              { icon: "energy", label: "Wind Turbines" },
+              {
+                icon: "directions_car",
+                label: "Miles Driven",
+                value: Math.floor(Math.random() * 100),
+              },
+              {
+                icon: "battery_charging_full",
+                label: "Electricity Use",
+                value: Math.floor(Math.random() * 100),
+              },
+              {
+                icon: "smartphone",
+                label: "Smartphones Charged",
+                value: Math.floor(Math.random() * 100),
+              },
+              {
+                icon: "eco",
+                label: "Tree Seedlings",
+                value: Math.floor(Math.random() * 100),
+              },
+              {
+                icon: "landscape",
+                label: "Acres of Forest",
+                value: Math.floor(Math.random() * 100),
+              },
+              {
+                icon: "energy",
+                label: "Wind Turbines",
+                value: Math.floor(Math.random() * 100),
+              },
             ].map((label, index) => (
               <div key={index} style={styles.card}>
                 <span
@@ -47,7 +73,7 @@ const Home = () => {
                 </span>
 
                 {/* Replace with actual icons */}
-                <h4 style={styles.card.h4}>N/A</h4>
+                <h4 style={styles.card.h4}>{label.value}</h4>
                 <p style={styles.card.p}>{label.label}</p>
                 <span
                   className="material-symbols-rounded"
@@ -66,19 +92,19 @@ const Home = () => {
         <div style={styles.statsContainer}>
           <div style={styles.statBox}>
             <p>Carbon Offset in lb</p>
-            <h4 style={styles.statBox.h4}>0</h4>
+            <h4 style={styles.statBox.h4}>{offset}</h4>
           </div>
           <div style={styles.statBox}>
             <p>Contributions</p>
-            <h4 style={styles.statBox.h4}>$0.00</h4>
+            <h4 style={styles.statBox.h4}>${(offset * 0.2).toFixed(2)}</h4>
           </div>
           <div style={styles.statBox}>
             <p>Total Offset Orders</p>
-            <h4 style={styles.statBox.h4}>0</h4>
+            <h4 style={styles.statBox.h4}>{orders}</h4>
           </div>
           <div style={styles.statBox}>
             <p>Avg Offset in lb</p>
-            <h4 style={styles.statBox.h4}>0.00</h4>
+            <h4 style={styles.statBox.h4}>{(offset / orders).toFixed(2)}</h4>
           </div>
         </div>
       </section>
