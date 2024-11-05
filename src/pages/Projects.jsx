@@ -93,7 +93,7 @@ const ProjectCard = ({ project }) => {
 const styles = {
   container: {
     width: "100%",
-    padding: "20px 18rem",
+    padding: "20px 12rem",
     backgroundColor: "#f5f7fa",
   },
   title: {

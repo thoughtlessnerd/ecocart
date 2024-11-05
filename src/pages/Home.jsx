@@ -24,7 +24,7 @@ const Home = () => {
       <header style={styles.header}>
         <h1 style={styles.header?.h1}>Welcome back, Akshit Kumar!</h1>
         <h2 style={styles.header?.h2}>
-          To date, Ariadné has offset{" "}
+          To date, StreakShip's Customer has offset{" "}
           <span style={styles.highlight}>{offset} lb</span> of carbon dioxide
           (CO₂) across <span style={styles.highlight}>{orders} orders</span>
         </h2>
@@ -162,7 +162,7 @@ const styles = {
     marginBottom: "20px",
     color: "#fff",
     backgroundColor: "#0b1b3d",
-    padding: "4rem 18rem",
+    padding: "4rem 12rem",
     // borderRadius: "8px",
     h2: {
       fontSize: "3rem",
@@ -189,7 +189,7 @@ const styles = {
     color: "#fff",
     padding: "15px",
     // margin: "10px",
-    width: "180px",
+    width: "150px",
     // textAlign: "center",
     borderRadius: "15px",
     h4: {
@@ -213,7 +213,7 @@ const styles = {
   },
   journeySection: {
     // marginBottom: "20px",
-    padding: "0 18rem",
+    padding: "0 12rem",
   },
   statsContainer: {
     display: "grid",
@@ -236,14 +236,14 @@ const styles = {
     },
   },
   chartSection: {
-    margin: "20px 18rem",
+    margin: "20px 12rem",
     padding: "20px",
     backgroundColor: "#fff",
     borderRadius: "15px",
     // boxShadow: "0 0 5px rgba(0,0,0,0.1)",
   },
   projectFundingSection: {
-    margin: "20px 18rem",
+    margin: "20px 12rem",
     padding: "20px",
     backgroundColor: "#fff",
     borderRadius: "15px",

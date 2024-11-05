@@ -182,11 +182,15 @@ const Project = () => {
   const { id } = useParams();
   const projectData = data[id || 1];
 
-  console.log(projectData);
-
   return (
     <div style={styles.container}>
-      <a href="../projects" style={styles.backLink}>
+      <a
+        href="#"
+        onClick={() => {
+          window.history.back();
+        }}
+        style={styles.backLink}
+      >
         ← Back to Projects Selection
       </a>
 
@@ -263,7 +267,7 @@ const Project = () => {
 const styles = {
   container: {
     width: "100%",
-    padding: "20px 18rem",
+    padding: "20px 12rem",
     backgroundColor: "#f5f7fa",
   },
   backLink: {
