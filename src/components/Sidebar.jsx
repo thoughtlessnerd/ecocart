@@ -3,9 +3,10 @@ import { Link } from "react-router-dom";
 
 const options = [
   { label: "Home", icon: "home", href: "/" },
-  // { label: "Settings", icon: "settings", href: "/settings" },
+  { label: "Settings", icon: "settings", href: "/settings" },
   { label: "Billing", icon: "credit_card", href: "/billing" },
   { label: "Projects", icon: "folder", href: "/projects" },
+  { label: "Shipments", icon: "local_shipping", href: "/shipments" },
   // { label: "Integrations", icon: "apps", href: "/integrations" },
 ];
 
@@ -53,7 +54,7 @@ const Sidebar = () => {
 
 const styles = {
   sidebar: {
-    width: "100px",
+    minWidth: "100px",
     height: "100vh",
     backgroundColor: "#fff",
     display: "flex",

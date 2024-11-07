@@ -10,10 +10,10 @@ import {
 
 const Home = () => {
   const data = [
-    { name: "Jan 2024", value: Math.floor(Math.random() * 100) },
-    { name: "Feb 2024", value: Math.floor(Math.random() * 100) },
-    { name: "Mar 2024", value: Math.floor(Math.random() * 100) },
-    { name: "Jun 2024", value: Math.floor(Math.random() * 100) },
+    { name: "Aug 2024", value: Math.floor(Math.random() * 100) },
+    { name: "Sep 2024", value: Math.floor(Math.random() * 100) },
+    { name: "Oct 2024", value: Math.floor(Math.random() * 100) },
+    { name: "Nov 2024", value: Math.floor(Math.random() * 100) },
     // Continue to add data points as needed
   ];
   const offset = (Math.random() * 100).toFixed(2);
