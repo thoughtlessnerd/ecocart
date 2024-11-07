@@ -93,7 +93,7 @@ const GeneralSettings = () => {
       <h3 style={styles.section.h3}>General Settings</h3>
       <p>Manage how you want Streak Ship to function</p>
       <div style={styles.switchContainer}>
-        <label>EcoCart</label>
+        <label>Toggle calculations, offsets, and widgets on or off</label>
         <ToggleSwitch
           checked={ecoCartEnabled}
           onChange={() => setEcoCartEnabled(!ecoCartEnabled)}
